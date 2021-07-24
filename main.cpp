@@ -230,7 +230,7 @@ int main(int argc, char *argv[]){
 			wf << endl << "break;";
 		}
 		else if (token == "stop"){
-			if (tokens[i+1] == "asking" || tokens[i+1] == "triping"){
+			if (tokens[i+1] == "asking" || tokens[i+1] == "tripping"){
 				wf << endl << "}";
 			}
 		}
