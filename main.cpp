@@ -290,14 +290,14 @@ int main(int argc, char *argv[]){
 	//Compile C++ file
 	system("g++ output.cpp -o output.exe");
 	//Delete C++ file
-	if (argv[2][0] != 's'){
-		if (remove("output.cpp")==0){
-		cout << "Finished!";
-		}
-		else{
-			cout << "Error";
-		}
+	if (remove("output.cpp")==0){
+		cout << "Finished!" << endl << endl;
 	}
+	else{
+		cout << "Error";
+	}
+	cout << "Output: " << endl;
+	system("output.exe");
 
 	return 0;
 }
